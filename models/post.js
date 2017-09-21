@@ -7,6 +7,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         Post.belongsTo(models.user);
+        Post.hasMany(models.strangeUsers);
       }
     }
   });

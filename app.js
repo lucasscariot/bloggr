@@ -1,12 +1,13 @@
 require('dotenv').config()
 
 const express = require('express');
-const logger = require('morgan');
+const scriber = require('express-scriber');
+const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const forest = require('forest-express-sequelize');
 
 const app = express();
-app.use(logger('dev'));
+app.use(scriber());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(forest.init({
