@@ -1,10 +1,10 @@
 {
   "development": {
-    "username": "forest",
-    "password": "secret",
-    "database": "blog",
+    "username": "bloggr_user",
+    "password": "bloggr_password",
+    "database": "bloggr",
     "host": "127.0.0.1",
-    "port": 5435,
+    "port": 5433,
     "dialect": "postgres"
   },
   "test": {

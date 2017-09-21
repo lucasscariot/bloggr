@@ -1,0 +1,9 @@
+postgres:
+  image: postgres:9.4.5
+  container_name: bloggr_postgres
+  ports:
+    - "5433:5432"
+  environment:
+    - POSTGRES_DB=bloggr
+    - POSTGRES_USER=bloggr_user
+    - POSTGRES_PASSWORD=bloggr_password
