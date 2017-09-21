@@ -1,5 +1,6 @@
 # bloggr
 
-## Database
-- [Forest] Test | Dev
-- Host: localhost | Port: 5435
+#@ How To
+- `npm install`
+- `npm run start:dev`
+- `http://localhost:3000`
