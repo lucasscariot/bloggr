@@ -13,6 +13,7 @@ app.use(forest.init({
   modelsDir: __dirname + '/models', // Your models directory.
   envSecret: process.env.FOREST_ENV_SECRET,
   authSecret: process.env.FOREST_AUTH_SECRET,
+  authExpiration: process.env.FOREST_AUTH_EXPIRATION,
   sequelize: require('./models').sequelize
 }));
 
